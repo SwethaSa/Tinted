@@ -1,0 +1,109 @@
+h1 {
+  font-family: "Righteous", sans-serif;
+  font-size: 45px;
+  margin-left: 7cm;
+  margin-right: 25px;
+  color: chocolate;
+}
+h3 {
+  font-family: "Syne", sans-serif;
+  margin-top: 18px;
+}
+h3:hover,
+h1:hover {
+  cursor: pointer;
+}
+
+h4:hover {
+  cursor: pointer;
+  transform: scaleX(20px);
+  transform: scale(1.3);
+}
+h4 {
+  font-family: "Syne", sans-serif;
+  margin-top: 18px;
+  font-size: 23px;
+  color: chocolate;
+  transition: transform 0.2s;
+}
+/*.header {
+  background-color: peachpuff;
+  width: 100%;
+  padding: 35px;
+  display: flex;
+  gap: 30px;
+  position: fixed;
+}*/
+.account {
+  font-size: 25px;
+}
+.search {
+  margin-left: 6cm;
+  margin-top: 20px;
+}
+
+.bg {
+  background-image: url("./src/assets/bg.jpeg");
+  height: 40cm;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  animation: subtleMovement 25s infinite linear alternate;
+}
+
+@keyframes subtleMovement {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -0.1in);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, 0.1in);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.header {
+  background-color: peachpuff;
+  width: 100%;
+  padding: 35px;
+  display: flex;
+  gap: 30px;
+  position: fixed;
+  z-index: 1;
+}
+
+/*
+section:before {
+  background: url(./src/assets/bg.jpeg);
+  content: "";
+  position: absolute;
+  top: 127px;
+  left: 0;
+  width: 300px;
+  height: 63rem;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: 0 4px 20px 10px rgba(123, 63, 0, 0.6);
+  background-size: 110%;
+  animation: animate 9s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    left: 0px;
+  }
+
+  50% {
+    left: calc(100% - 300px);
+  }
+}
+*/
