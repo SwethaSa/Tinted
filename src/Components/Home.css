@@ -9,7 +9,10 @@ h3 {
   font-family: "Syne", sans-serif;
   margin-top: 18px;
 }
-h3:hover,
+h3:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 h1:hover {
   cursor: pointer;
 }
@@ -44,7 +47,7 @@ h4 {
 
 .bg {
   background-image: url("./src/assets/bg.jpeg");
-  height: 40cm;
+  height: 28cm;
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
