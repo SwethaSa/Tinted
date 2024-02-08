@@ -3,3 +3,17 @@ h2 {
   margin-left: 8cm;
   font-weight: 5000;
 }
+
+p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin-left: 1cm;
+}
+
+img {
+  height: 500px;
+  width: 450px;
+}
+.Caro {
+  display: flex;
+  overflow: hidden;
+}
