@@ -3,20 +3,76 @@
   font-size: xx-large;
   text-align: center;
   justify-content: center;
-  background-color: #f6f4f0;
+  background-color: #d4d1d1;
   padding: 1cm;
   font-weight: bolder;
 }
 
 .main {
-  background-color: burlywood;
+  background-color: #d4d1d1;
   text-align: center;
   justify-content: center;
 }
 
+.card {
+  background-color: rgb(166, 68, 68);
+  margin: auto;
+  border-radius: 5px;
+  display: flex;
+}
+
 .card-img {
-  width: 15cm;
-  height: 15cm;
-  padding: 2cm;
-  background-color: aliceblue;
+  width: 10cm;
+  height: 13cm;
+  border-radius: 20px;
+}
+
+.name {
+  font-family: "Kanit", sans-serif;
+  text-align: left;
+  justify-content: center;
+  margin: auto;
+  font-size: xx-large;
+}
+.by,
+.price {
+  text-align: left;
+  margin: auto;
+}
+
+.price {
+  font-size: x-large;
+  margin-top: 10px;
+}
+
+.checkout {
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.checkout-opt {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+.visa,
+.gpay,
+.ms {
+  height: 35px;
+  width: 55px;
+}
+
+.first {
+  margin: 1cm;
+  margin-right: 30px;
+}
+
+.second {
+  margin-top: 1cm;
 }

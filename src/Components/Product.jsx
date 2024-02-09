@@ -20,7 +20,7 @@ export default function Products() {
         if (filteredData.length > 0) {
           // Randomly select one of the filtered objects
           const randomIndex = Math.floor(Math.random() * filteredData.length);
-          setImageSrc(filteredData[randomIndex].image2);
+          setImageSrc(filteredData[randomIndex]);
         } else {
           throw new Error("No images found");
         }
@@ -35,19 +35,34 @@ export default function Products() {
     <>
       <p className="top-prod">Our Top Products</p>
       <div className="main">
-        <Card className="card">
-          <div>
+        <Card style={{ width: "20cm" }} className="card">
+          <div className="first">
             {imageSrc && (
-              <Card.Img className="card-img" variant="top" src={imageSrc} />
+              <Card.Img
+                className="card-img"
+                variant="top"
+                src={imageSrc.image2}
+              />
             )}
           </div>
-          <div>
+          <div className="second">
             <Card.Body>
-              {/* <Card.Title>Card Title</Card.Title> */}
-              {/* <Card.Text>
-           
-          </Card.Text> */}
-              {/* <Button variant="primary">Go somewhere</Button> */}
+              <p className="by">{imageSrc.by}</p>
+              <h2 className="name">{imageSrc.name}</h2>
+              <p className="price">Rs.{imageSrc.price}</p>
+              <p className="checkout">Secure Checkout with </p>
+              <div className="checkout-opt">
+                <button>
+                  <img className="gpay" src="./src/assets/gpa.png" alt="gpay" />
+                </button>
+                <button>
+                  <img className="visa" src="./src/assets/vsa.png" alt="visa" />
+                </button>
+                <button>
+                  <img className="ms" src="./src/assets/ms.png" alt="ms" />
+                </button>
+              </div>
+              <button>Add to Cart</button>
             </Card.Body>
           </div>
         </Card>
