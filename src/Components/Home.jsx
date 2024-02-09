@@ -11,12 +11,28 @@ export default function Home() {
 
   let [isDeco, setIsDeco] = useState(false);
 
+  const [isTop, setIsTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      const height = 82;
+      setIsTop(scrollTop < height);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   useEffect(() => {
     setIsDeco(location.pathname === "/");
   }, [location.pathname]);
   return (
     <>
-      <div className="header">
+      <div className={`header ${isTop ? "" : "scrolled"}`}>
         <Link style={{ textDecoration: "none" }} to="/">
           <h1 onClick={() => navigate("/")}>Tinted</h1>
         </Link>

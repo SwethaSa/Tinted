@@ -4,10 +4,12 @@ h1 {
   margin-left: 7cm;
   margin-right: 25px;
   color: chocolate;
+  transition: font-size 0.5s ease;
 }
 h3 {
   font-family: "Syne", sans-serif;
   margin-top: 18px;
+  transition: margin-top 0.3s ease;
 }
 h3:hover {
   cursor: pointer;
@@ -28,21 +30,15 @@ h4 {
   font-size: 23px;
   color: chocolate;
   transition: transform 0.2s;
+  transition: margin-top 0.3s ease;
 }
-/*.header {
-  background-color: peachpuff;
-  width: 100%;
-  padding: 35px;
-  display: flex;
-  gap: 30px;
-  position: fixed;
-}*/
 .account {
   font-size: 25px;
 }
 .search {
   margin-left: 6cm;
   margin-top: 20px;
+  transition: margin-top 0.3s ease;
 }
 
 .bg {
@@ -51,7 +47,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
-  animation: subtleMovement 25s infinite linear alternate;
+  animation: subtleMovement 10s infinite linear alternate;
 }
 
 @keyframes subtleMovement {
@@ -78,35 +74,26 @@ h4 {
   padding: 35px;
   display: flex;
   gap: 30px;
-  position: fixed;
   z-index: 1;
-}
-
-/*
-section:before {
-  background: url(./src/assets/bg.jpeg);
-  content: "";
-  position: absolute;
-  top: 127px;
+  height: 60px;
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 300px;
-  height: 63rem;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  box-shadow: 0 4px 20px 10px rgba(123, 63, 0, 0.6);
-  background-size: 110%;
-  animation: animate 9s ease-in-out infinite;
+  transition: height 0.5s ease;
 }
 
-@keyframes animate {
-  0%,
-  100% {
-    left: 0px;
+.header.scrolled {
+  height: 40px;
+  h1 {
+    font-size: 40px;
   }
-
-  50% {
-    left: calc(100% - 300px);
+  h3 {
+    margin-top: 12px;
+  }
+  h4 {
+    margin-top: 14px;
+  }
+  .search {
+    margin-top: 15px;
   }
 }
-*/
