@@ -1,0 +1,22 @@
+.top-prod {
+  font-family: "Kanit", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+  background-color: #f6f4f0;
+  padding: 1cm;
+  font-weight: bolder;
+}
+
+.main {
+  background-color: burlywood;
+  text-align: center;
+  justify-content: center;
+}
+
+.card-img {
+  width: 15cm;
+  height: 15cm;
+  padding: 2cm;
+  background-color: aliceblue;
+}

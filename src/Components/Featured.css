@@ -1,21 +1,25 @@
 h2 {
-  font-family: "Syne", sans-serif;
+  font-family: "Kanit", sans-serif;
   margin-left: 8cm;
   font-weight: 5000;
   margin-bottom: 1cm;
 }
 
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  margin-left: 30px;
+  font-family: "Nova Oval", system-ui;
+  margin-left: 60px;
+  font-size: smaller;
+  margin-top: 4px;
 }
 
 img {
   height: 500px;
-  width: 400px;
+  width: 50px;
+  border-radius: 20px;
 }
 
 .swiper-slide img {
   width: 400px;
   height: 500px;
+  margin-left: 43px;
 }

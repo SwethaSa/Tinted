@@ -41,7 +41,7 @@ export default function Featured() {
     <>
       <h2>Featured Products</h2>
       <Swiper
-        slidesPerView={4}
+        slidesPerView={3}
         spaceBetween={30}
         navigation={true}
         modules={[Navigation]}
