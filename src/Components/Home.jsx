@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset;
-      const height = 82;
+      const height = 85;
       setIsTop(scrollTop < height);
     };
 
