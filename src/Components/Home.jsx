@@ -5,6 +5,7 @@ import { BsSearchHeartFill, BsFillBagHeartFill } from "react-icons/bs";
 import { RiAccountPinCircleFill } from "react-icons/ri";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Products from "./Product";
+import Testimonials from "./Testimonials";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -64,6 +65,7 @@ export default function Home() {
       <div className="bg"></div>
       <Featured />
       <Products />
+      <Testimonials />
     </>
   );
 }

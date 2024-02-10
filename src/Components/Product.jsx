@@ -34,6 +34,7 @@ export default function Products() {
 
   return (
     <>
+      <hr></hr>
       <p className="top-prod">Our Top Products</p>
       <div className="main">
         <Card style={{ width: "20cm" }} className="card">

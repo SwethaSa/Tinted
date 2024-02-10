@@ -7,6 +7,15 @@
   font-weight: bolder;
 }
 
+hr {
+  margin-top: 2cm;
+  height: 20px;
+  background-color: #f1eded;
+  outline: none;
+  border: none;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
 .main {
   text-align: center;
   justify-content: center;
