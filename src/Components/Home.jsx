@@ -8,6 +8,7 @@ import Products from "./Product";
 import Testimonials from "./Testimonials";
 import Guarantee from "./Guarantee";
 import Mail from "./Mail";
+import Footer from "./Footer";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -71,6 +72,7 @@ export default function Home() {
       </div>
       <Guarantee />
       <Mail />
+      <Footer />
     </>
   );
 }

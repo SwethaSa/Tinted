@@ -1,0 +1,74 @@
+.foo {
+  color: peachpuff;
+  font-size: medium;
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1cm;
+}
+
+.footer {
+  background-color: rgb(60, 25, 2);
+}
+
+.insta {
+  font-size: 25px;
+}
+
+.twitter {
+  font-size: 18px;
+}
+
+.whatsapp {
+  font-size: 21px;
+}
+
+.facebook {
+  font-size: 20px;
+}
+
+.line {
+  height: 1px;
+  background-color: rgba(99, 52, 20, 0.825);
+  margin-top: 0;
+}
+
+.low-foo {
+  display: flex;
+  gap: 6px;
+  color: peachpuff;
+  font-family: "Syne", sans-serif;
+  font-size: 13px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  padding: 2cm;
+  padding-bottom: 1cm;
+}
+
+.contact:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.shipping:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.privacy:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.terms:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.refund:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
