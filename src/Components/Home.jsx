@@ -7,6 +7,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import Products from "./Product";
 import Testimonials from "./Testimonials";
 import Guarantee from "./Guarantee";
+import Mail from "./Mail";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -69,6 +70,7 @@ export default function Home() {
         <Testimonials />
       </div>
       <Guarantee />
+      <Mail />
     </>
   );
 }

@@ -1,0 +1,42 @@
+.top {
+  background-color: #f1eded;
+}
+
+.style {
+  font-family: "Kanit", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+  font-weight: bolder;
+  margin: auto;
+  padding: 20px;
+  padding-top: 60px;
+}
+
+.style-desc {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+.style-mail {
+  width: 5cm;
+  height: 45px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: larger;
+  background-color: rgba(255, 218, 185, 0.759);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgb(254, 199, 159);
+  margin-left: 675px;
+  margin-top: 20px;
+}
+
+.style-mail:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+  transform: translateY(2px) rotate(-1deg);
+  border: 3px solid rgb(254, 199, 159);
+}
