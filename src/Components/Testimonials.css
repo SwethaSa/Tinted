@@ -6,6 +6,7 @@
   padding: 1cm;
   font-weight: bolder;
   margin-bottom: 2cm;
+  margin: auto;
 }
 
 .testi {
@@ -14,6 +15,16 @@
   border-radius: 5px;
 }
 
+.test-hr {
+  background-color: white;
+  box-shadow: none;
+}
+
+.hrr {
+  margin-top: 0;
+  box-shadow: none;
+  height: 2cm;
+}
 .cards {
   display: flex;
   text-align: center;
@@ -32,4 +43,7 @@
 
 .test-names {
   font-family: "Kanit", sans-serif;
+}
+.primary {
+  margin-bottom: 1cm;
 }

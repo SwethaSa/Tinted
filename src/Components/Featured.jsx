@@ -39,22 +39,24 @@ export default function Featured() {
 
   return (
     <>
-      <h2>Featured Products</h2>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        navigation={true}
-        modules={[Navigation]}
-        className="mySwiper"
-      >
-        {images.map((product, index) => (
-          <SwiperSlide key={index}>
-            <img src={product.image1} alt={product.name} />
-            <p>{product.name}</p>
-            <p>Rs.{product.price}</p>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="feau">
+        <h2>Featured Products</h2>
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+        >
+          {images.map((product, index) => (
+            <SwiperSlide key={index}>
+              <img src={product.image1} alt={product.name} />
+              <p>{product.name}</p>
+              <p>Rs.{product.price}</p>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </>
   );
 }

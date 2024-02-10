@@ -5,6 +5,8 @@
   justify-content: center;
   padding: 1cm;
   font-weight: bolder;
+  margin: auto;
+  background-color: #f1eded;
 }
 
 hr {
@@ -19,16 +21,19 @@ hr {
 .main {
   text-align: center;
   justify-content: center;
+  background-color: #f1eded;
 }
 
 .card {
   background-color: rgba(255, 254, 254, 0.759);
   backdrop-filter: blur(10px);
   margin: auto;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   backdrop-filter: blur(8px);
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 2px 8px 0 rgb(255, 182, 104, 0.2),
+    0 6px 20px 0 rgba(255, 182, 104, 0.2);
+  /* box-shadow: 0 6px 6px 0 rgba(255, 182, 104, 0.2); */
 }
 
 .card-img {

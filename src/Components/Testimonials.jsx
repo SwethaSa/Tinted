@@ -3,7 +3,7 @@ import "./Testimonials.css";
 export default function Testimonials() {
   return (
     <>
-      <hr></hr>
+      <hr className="hrr"></hr>
       <div className="primary">
         <p className="test">Testimonials</p>
         <div className="cards">
@@ -44,6 +44,7 @@ export default function Testimonials() {
                 </div>
               </Card.Body>
             </Card>
+            <hr className="test-hr"></hr>
           </div>
         </div>
       </div>

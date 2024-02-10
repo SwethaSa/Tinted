@@ -6,6 +6,7 @@ import { RiAccountPinCircleFill } from "react-icons/ri";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Products from "./Product";
 import Testimonials from "./Testimonials";
+import Guarantee from "./Guarantee";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -34,38 +35,40 @@ export default function Home() {
   }, [location.pathname]);
   return (
     <>
-      <div className={`header ${isTop ? "" : "scrolled"}`}>
-        <Link style={{ textDecoration: "none" }} to="/">
-          <h1 onClick={() => navigate("/")}>Tinted</h1>
-        </Link>
-        <Link
-          style={{
-            textDecoration: isDeco ? "underline" : "none",
-            color: "black",
-          }}
-          to="/"
-        >
-          <h3 onClick={() => navigate("/")}>Home</h3>
-        </Link>
-        {}
-        {/* <h3>Home</h3> */}
-        <h3>Products</h3>
-        <h3>Blogs</h3>
-        <h3>Contact</h3>
-        <h4 className="search">
-          <BsSearchHeartFill />
-        </h4>
-        <h4 className="account">
-          <RiAccountPinCircleFill />
-        </h4>
-        <h4>
-          <BsFillBagHeartFill />
-        </h4>
+      <div className="feau">
+        <div className={`header ${isTop ? "" : "scrolled"}`}>
+          <Link style={{ textDecoration: "none" }} to="/">
+            <h1 onClick={() => navigate("/")}>Tinted</h1>
+          </Link>
+          <Link
+            style={{
+              textDecoration: isDeco ? "underline" : "none",
+              color: "black",
+            }}
+            to="/"
+          >
+            <h3 onClick={() => navigate("/")}>Home</h3>
+          </Link>
+
+          <h3>Products</h3>
+          <h3>Blogs</h3>
+          <h3>Contact</h3>
+          <h4 className="search">
+            <BsSearchHeartFill />
+          </h4>
+          <h4 className="account">
+            <RiAccountPinCircleFill />
+          </h4>
+          <h4>
+            <BsFillBagHeartFill />
+          </h4>
+        </div>
+        <div className="bg"></div>
+        <Featured />
+        <Products />
+        <Testimonials />
       </div>
-      <div className="bg"></div>
-      <Featured />
-      <Products />
-      <Testimonials />
+      <Guarantee />
     </>
   );
 }
