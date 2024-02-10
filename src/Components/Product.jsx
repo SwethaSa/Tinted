@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Products.css";
 import Card from "react-bootstrap/Card";
+import { BsArrowRightShort } from "react-icons/bs";
 
 export default function Products() {
   const [imageSrc, setImageSrc] = useState("");
@@ -52,17 +53,20 @@ export default function Products() {
               <p className="price">Rs.{imageSrc.price}</p>
               <p className="checkout">Secure Checkout with </p>
               <div className="checkout-opt">
-                <button>
-                  <img className="gpay" src="./src/assets/gpa.png" alt="gpay" />
-                </button>
-                <button>
-                  <img className="visa" src="./src/assets/vsa.png" alt="visa" />
-                </button>
-                <button>
-                  <img className="ms" src="./src/assets/ms.png" alt="ms" />
-                </button>
+                <img className="gpay" src="./src/assets/gpa.png" alt="gpay" />
+
+                <img className="visa" src="./src/assets/vsa.png" alt="visa" />
+
+                <img className="ms" src="./src/assets/ms.png" alt="ms" />
               </div>
-              <button>Add to Cart</button>
+              <button className="cart">Add to Cart</button>
+              <button className="buy">Buy Now</button>
+              <div className="arrow">
+                <p className="desc">view full details</p>{" "}
+                <div className="icon">
+                  <BsArrowRightShort />
+                </div>
+              </div>
             </Card.Body>
           </div>
         </Card>
