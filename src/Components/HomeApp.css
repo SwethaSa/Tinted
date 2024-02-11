@@ -1,0 +1,163 @@
+.tint-head {
+  margin-left: 6cm;
+}
+
+@media only screen and (min-width: 970px) {
+  .tint-search {
+    margin-left: 6cm;
+  }
+}
+
+@media only screen and (max-width: 970px) {
+  .tint-search {
+    margin-left: 6cm;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .tint-search {
+    margin-left: 4cm;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .tint-head {
+    margin-left: 5cm;
+  }
+  .tint-search {
+    margin-left: 3cm;
+  }
+}
+
+@media only screen and (max-width: 784px) {
+  .tint-head {
+    margin-left: 4.8cm;
+  }
+  .tint-search {
+    margin-left: 2.5cm;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .tint-head {
+    margin-left: 4.5cm;
+  }
+  .tint-search {
+    margin-left: 3.5cm;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .tint-head {
+    margin-left: 4cm;
+  }
+  .tint-search {
+    margin-left: 3cm;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .tint-head {
+    margin-left: 3cm;
+  }
+  .tint-search {
+    margin-left: 2cm;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .tint-head {
+    margin-left: 2.5cm;
+  }
+  .tint-search {
+    margin-left: 2.5cm;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tint-head {
+    margin-left: 2.8cm;
+  }
+  .tint-search {
+    margin-left: 2cm;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .tint-head {
+    margin-left: 2.5cm;
+  }
+  .tint-search {
+    margin-left: 1.8cm;
+  }
+  .header {
+    gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .tint-head {
+    margin-left: 1.5cm;
+  }
+  .tint-search {
+    margin-left: 0.8cm;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .tint-head {
+    margin-left: 1.3cm;
+  }
+  .tint-search {
+    margin-left: 0.6cm;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .tint-head {
+    margin-left: 1cm;
+  }
+  .tint-search {
+    margin-left: 0.4cm;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .tint-head {
+    margin-left: 0.5cm;
+  }
+  .tint-search {
+    margin-left: 0.2cm;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .tint-head {
+    margin-left: 0.5cm;
+  }
+  .tint-search {
+    margin-left: 0;
+  }
+  .header {
+    gap: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .tint-head {
+    margin-left: 5px;
+  }
+  .tint-search {
+    margin-left: -9px;
+  }
+  .header {
+    gap: 15px;
+  }
+}
+
+.header {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}

@@ -7,7 +7,7 @@ export default function Testimonials() {
       <div className="primary">
         <p className="test">Testimonials</p>
         <div className="cards">
-          <div>
+          <div className="testimonial">
             <Card className="testi">
               <Card.Body>
                 <h4 className="test-names">Prathee!</h4>
@@ -20,7 +20,7 @@ export default function Testimonials() {
               </Card.Body>
             </Card>
           </div>
-          <div>
+          <div className="testimonial">
             <Card className="testi">
               <Card.Body>
                 <h4 className="test-names">Ravee</h4>
@@ -33,7 +33,7 @@ export default function Testimonials() {
               </Card.Body>
             </Card>
           </div>
-          <div>
+          <div className="testimonial">
             <Card className="testi">
               <Card.Body>
                 <h4 className="test-names">Priya</h4>

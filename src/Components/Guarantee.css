@@ -51,6 +51,10 @@
   margin-bottom: 1cm;
 }
 
+.gr-shop-btn {
+  margin: auto;
+}
+
 .gr-shop:hover {
   background-color: aliceblue;
   cursor: pointer;
@@ -78,4 +82,89 @@
 }
 .gr-hr {
   visibility: hidden;
+}
+
+@media only screen and (max-width: 1000px) {
+  .gr-card {
+    width: 90%;
+  }
+
+  .gr-test {
+    padding: 20px;
+  }
+
+  .gr-desc {
+    padding-left: 1cm;
+    padding-right: 1cm;
+  }
+
+  .gr-shop {
+    margin: auto;
+    margin-left: 8cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 886px) {
+  .gr-shop {
+    margin: auto;
+    margin-left: 6.9cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .gr-shop {
+    margin: auto;
+    margin-left: 6cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .gr-shop {
+    margin: auto;
+    margin-left: 5cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .gr-shop {
+    margin: auto;
+    margin-left: 4cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .gr-shop {
+    margin: auto;
+    margin-left: 3cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .gr-shop {
+    margin: auto;
+    margin-left: 2cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 345px) {
+  .gr-shop {
+    margin: auto;
+    margin-left: 1cm;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }

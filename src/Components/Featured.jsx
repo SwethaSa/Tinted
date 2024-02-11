@@ -8,6 +8,7 @@ import { Navigation } from "swiper/modules";
 
 export default function Featured() {
   let [images, setImages] = useState([]);
+  const [slidesPerView, setSlidesPerView] = useState(3);
 
   let API = "https://backend-swethasa.vercel.app/products/all";
 
@@ -37,12 +38,33 @@ export default function Featured() {
     fetchImages();
   }, []);
 
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 950 && screenWidth > 550) {
+        setSlidesPerView(2);
+      } else if (screenWidth <= 550) {
+        setSlidesPerView(1);
+      } else {
+        setSlidesPerView(3);
+      }
+    };
+
+    handleResize(); // Call handleResize initially to set initial slidesPerView value
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <div className="feau">
         <h2>Featured Products</h2>
         <Swiper
-          slidesPerView={3}
+          slidesPerView={slidesPerView}
           spaceBetween={30}
           navigation={true}
           modules={[Navigation]}

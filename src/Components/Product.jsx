@@ -32,19 +32,24 @@ export default function Products() {
     fetchData();
   }, []);
 
+  const getCardWidth = () => {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 800) {
+      return "90%";
+    } else {
+      return "20cm";
+    }
+  };
+
   return (
     <>
       <hr></hr>
       <p className="top-prod">Our Top Products</p>
       <div className="main">
-        <Card style={{ width: "20cm" }} className="card">
+        <Card style={{ width: getCardWidth() }} className="card">
           <div className="first">
             {imageSrc && (
-              <Card.Img
-                className="card-img"
-                variant="top"
-                src={imageSrc.image2}
-              />
+              <Card.Img className="card-img" src={imageSrc.image2} />
             )}
           </div>
           <div className="second">
@@ -60,8 +65,10 @@ export default function Products() {
 
                 <img className="ms" src="./src/assets/ms.png" alt="ms" />
               </div>
-              <button className="cart">Add to Cart</button>
-              <button className="buy">Buy Now</button>
+              <div className="btns">
+                <button className="cart">Add to Cart</button>
+                <button className="buy">Buy Now</button>
+              </div>
               <div className="arrow">
                 <p className="desc">view full details</p>{" "}
                 <div className="icon">

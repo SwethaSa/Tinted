@@ -29,10 +29,27 @@
   font-size: 20px;
 }
 
+.insta:hover {
+  cursor: pointer;
+}
+
+.whatsapp:hover {
+  cursor: pointer;
+}
+.facebook:hover {
+  cursor: pointer;
+}
+
+.twitter:hover {
+  cursor: pointer;
+}
+
 .line {
   height: 1px;
   background-color: rgba(99, 52, 20, 0.825);
   margin-top: 0;
+  width: 80%;
+  margin: auto;
 }
 
 .low-foo {

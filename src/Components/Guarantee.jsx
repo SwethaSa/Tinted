@@ -15,7 +15,9 @@ export default function Guarantee() {
               all over India. Orders and Support of 24 hours a day, 7 days a
               week via Email, Social Media and Text.
             </p>
-            <button className="gr-shop">Shop Now</button>
+            <div className="gr-shop-btn">
+              <button className="gr-shop">Shop Now</button>
+            </div>
           </Card>
         </div>
       </div>

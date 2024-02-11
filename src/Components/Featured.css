@@ -3,6 +3,8 @@ h2 {
   margin-left: 8cm;
   font-weight: 5000;
   margin-bottom: 1cm;
+  margin: auto;
+  padding: 20px;
 }
 
 p {
@@ -22,4 +24,40 @@ img {
   width: 400px;
   height: 500px;
   margin-left: 43px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .mySwiper {
+    .swiper-wrapper {
+      gap: 0px;
+    }
+  }
+  .swiper-slide img {
+    width: 350px;
+    height: 500px;
+    margin-left: 4px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .mySwiper {
+    .swiper-wrapper {
+      gap: 0px;
+    }
+  }
+  .swiper-slide img {
+    width: 350px;
+    height: 500px;
+    margin-left: 2px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .mySwiper {
+    .swiper-wrapper {
+      gap: 0px;
+    }
+  }
 }

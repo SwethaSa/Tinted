@@ -33,7 +33,6 @@ hr {
   backdrop-filter: blur(8px);
   box-shadow: 0 2px 8px 0 rgb(255, 182, 104, 0.2),
     0 6px 20px 0 rgba(255, 182, 104, 0.2);
-  /* box-shadow: 0 6px 6px 0 rgba(255, 182, 104, 0.2); */
 }
 
 .card-img {
@@ -45,7 +44,6 @@ hr {
 .name {
   font-family: "Kanit", sans-serif;
   text-align: left;
-  justify-content: center;
   margin: auto;
   font-size: xx-large;
 }
@@ -151,4 +149,47 @@ hr {
   transform: translateY(2);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: translateY(2px) rotate(-1deg);
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    display: block;
+  }
+
+  .main {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .by,
+  .price,
+  .name {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .arrow {
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 1.5cm;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .card-img {
+    width: 8cm;
+    height: 11cm;
+    border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card-img {
+    width: 6.5cm;
+    height: 10cm;
+    border-radius: 20px;
+  }
 }
