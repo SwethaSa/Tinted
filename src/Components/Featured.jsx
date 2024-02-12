@@ -30,7 +30,6 @@ export default function Featured() {
         }
 
         setImages(duplicatedData);
-        console.log(duplicatedData);
       } catch (error) {
         console.error("Error Fetching Images", error);
       }

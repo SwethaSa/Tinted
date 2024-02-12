@@ -5,8 +5,11 @@ import { MdOutlineWhatsapp } from "react-icons/md";
 import { SlSocialFacebook } from "react-icons/sl";
 import { AiOutlineCopyright } from "react-icons/ai";
 import { PiDotBold } from "react-icons/pi";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
   return (
     <>
       <div className="footer">
@@ -30,15 +33,32 @@ export default function Footer() {
             <AiOutlineCopyright /> 2024, TINTED
           </div>
           <PiDotBold />
-          <div className="refund">Refund Policy</div>
+          <div className="refund" onClick={() => navigate("/refund-policy")}>
+            Refund Policy
+          </div>
+
           <PiDotBold />
-          <div className="privacy">Privacy Policy</div>
+          <div className="privacy" onClick={() => navigate("/privacy-policy")}>
+            Privacy Policy
+          </div>
           <PiDotBold />
-          <div className="terms">Terms of Service</div>
+          <div className="terms" onClick={() => navigate("/terms-of-service")}>
+            Terms of Service
+          </div>
           <PiDotBold />
-          <div className="shipping">Shipping Policy</div>
+          <div
+            className="shipping"
+            onClick={() => navigate("/shipping-policy")}
+          >
+            Shipping Policy
+          </div>
           <PiDotBold />
-          <div className="contact">Contact Information</div>
+          <div
+            className="contact"
+            onClick={() => navigate("/contact-information")}
+          >
+            Contact Information
+          </div>
         </div>
       </div>
     </>

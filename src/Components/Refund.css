@@ -1,0 +1,122 @@
+.re-head {
+  margin-top: 4cm;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: none;
+}
+
+.re-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.re-para {
+  text-align: justify;
+  font-size: larger;
+  line-height: 1cm;
+}
+
+.ci-para {
+  text-align: left;
+  font-size: larger;
+  line-height: 1cm;
+  margin-left: 8.8cm;
+  width: 80%;
+}
+.ci-container {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1.8cm;
+}
+.ci-head {
+  margin-top: 5cm;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: none;
+}
+.re-paras {
+  text-align: justify;
+  font-size: larger;
+  line-height: 1cm;
+  font-weight: bolder;
+}
+
+.re-head {
+  text-align: center;
+}
+
+.re-parabold {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.re-h4:hover {
+  cursor: none;
+  transform: none;
+  transform: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .re-container {
+    max-width: 90%;
+    margin-right: 1.5cm;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .re-container {
+    max-width: 80%;
+    margin-left: -1px;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  .ci-para {
+    margin-left: 8cm;
+  }
+}
+
+@media only screen and (max-width: 1165px) {
+  .ci-para {
+    margin-left: 7cm;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .ci-para {
+    margin-left: 6cm;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .ci-para {
+    margin-left: 5cm;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .ci-para {
+    margin-left: 4cm;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .ci-para {
+    margin-left: 3cm;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .ci-para {
+    margin-left: 2cm;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ci-para {
+    margin-left: 1cm;
+  }
+}

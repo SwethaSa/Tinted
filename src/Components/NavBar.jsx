@@ -12,14 +12,20 @@ import { BiHomeHeart } from "react-icons/bi";
 import { PiTShirtDuotone } from "react-icons/pi";
 import { MdOutlineCall } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
+import { Link } from "react-router-dom"; // Import Link
+import { useEffect, useState } from "react";
+import { RiAccountPinCircleFill } from "react-icons/ri";
+import "./NavBar.css";
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
     top: false,
   });
+  let [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   const items = ["Home", "Products", "Contact"];
   const icons = [<BiHomeHeart />, <PiTShirtDuotone />, <MdOutlineCall />];
+  const divIcon = [<RiAccountPinCircleFill />];
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -33,10 +39,24 @@ export default function SwipeableTemporaryDrawer() {
     setState({ ...state, [anchor]: open });
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const list = (anchor) => (
     <Box
-      sx={{ width: anchor === "top" ? "auto" : 250 }}
-      role="presentation"
+      sx={{
+        width: anchor === "top" ? "auto" : 250,
+        backgroundColor: "rgba(255, 218, 185, 0.759)",
+      }}
+      className="box-class"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
@@ -45,26 +65,45 @@ export default function SwipeableTemporaryDrawer() {
           <ListItem key={text} disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <ListItemIcon>{icons[index]}</ListItemIcon>
+                <ListItemIcon style={{ color: "chocolate" }}>
+                  {icons[index]}
+                </ListItemIcon>
               </ListItemIcon>
-              <ListItemText primary={text} />
+              {/* Use Link component to navigate */}
+              <ListItemText
+                primary={<Link to={`/${text.toLowerCase()}`}>{text}</Link>}
+              />
             </ListItemButton>
           </ListItem>
         ))}
       </List>
-      <Divider />
-      <List>
-        {["All mail"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                <ListItemIcon>{icons[index]}</ListItemIcon>
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+
+      {screenWidth <= 750 && (
+        <>
+          <Divider className="divider" />
+          <List>
+            {["Log In"].map((text, index) => (
+              <ListItem key={text} disablePadding>
+                <ListItemButton>
+                  <ListItemIcon>
+                    <ListItemIcon style={{ color: "chocolate" }}>
+                      {divIcon[index]}
+                    </ListItemIcon>
+                  </ListItemIcon>
+                  {/* Use Link component to navigate */}
+                  <ListItemText
+                    primary={
+                      <Link to={`/${text.toLowerCase()}`} className="link-deco">
+                        {text}
+                      </Link>
+                    }
+                  />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </>
+      )}
     </Box>
   );
 
