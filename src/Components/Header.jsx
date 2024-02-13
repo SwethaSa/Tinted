@@ -84,9 +84,9 @@ export default function Header() {
                   textDecoration: isDeco ? "underline" : "none",
                   color: "black",
                 }}
-                to="/contact"
+                to="/contact-us"
               >
-                <h3 onClick={() => navigate("/contact")}>Contact</h3>
+                <h3 onClick={() => navigate("/contact-us")}>Contact</h3>
               </Link>
               <h4 className="search">
                 <BsSearchHeartFill />
@@ -94,7 +94,7 @@ export default function Header() {
               <h4 className="account">
                 <RiAccountPinCircleFill />
               </h4>
-              <h4>
+              <h4 className="carts">
                 <BsFillBagHeartFill />
               </h4>
             </div>

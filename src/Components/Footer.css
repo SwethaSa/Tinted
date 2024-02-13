@@ -9,39 +9,55 @@
   padding: 1cm;
 }
 
+.target {
+  color: peachpuff;
+}
 .footer {
   background-color: rgb(60, 25, 2);
 }
 
 .insta {
   font-size: 25px;
+  transition: transform 0.3s ease;
 }
 
 .twitter {
   font-size: 18px;
+  transition: transform 0.3s ease;
 }
 
 .whatsapp {
   font-size: 21px;
+  transition: transform 0.3s ease;
 }
 
 .facebook {
   font-size: 20px;
+  transition: transform 0.3s ease;
 }
 
 .insta:hover {
   cursor: pointer;
+
+  transform: scaleX(20px);
+  transform: scale(1.3);
 }
 
 .whatsapp:hover {
   cursor: pointer;
+  transform: scaleX(20px);
+  transform: scale(1.3);
 }
 .facebook:hover {
   cursor: pointer;
+  transform: scaleX(20px);
+  transform: scale(1.3);
 }
 
 .twitter:hover {
   cursor: pointer;
+  transform: scaleX(20px);
+  transform: scale(1.3);
 }
 
 .line {

@@ -11,7 +11,6 @@ h1 {
 h3 {
   font-family: "Syne", sans-serif;
   margin-top: 18px;
-  transition: margin-top 0.3s ease;
 }
 h3:hover {
   cursor: pointer;
@@ -36,11 +35,15 @@ h4 {
 }
 .account {
   font-size: 25px;
+  transition: transform 0.3s ease;
 }
 .search {
   margin-left: 6cm;
   margin-top: 20px;
-  transition: margin-top 0.3s ease;
+  transition: transform 0.3s ease;
+}
+.carts {
+  transition: transform 0.3s ease;
 }
 
 .bg {

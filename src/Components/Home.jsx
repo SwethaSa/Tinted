@@ -40,6 +40,7 @@ export default function Home() {
 
   useEffect(() => {
     setIsDeco(location.pathname === "/");
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   return (

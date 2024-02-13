@@ -120,3 +120,92 @@
     margin-left: 1cm;
   }
 }
+
+/* Contact-US css */
+
+.name-num {
+  display: flex;
+  gap: 25px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.name-inp {
+  width: 22%;
+}
+
+.email-inp {
+  width: 22%;
+}
+
+.phone-inp {
+  width: 45.8%;
+  margin-top: 20px;
+}
+.comment-inp {
+  width: 45.8%;
+  margin-top: 20px;
+}
+.fields {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.name-inp,
+.email-inp,
+.comment-inp,
+.phone-inp {
+  outline: none;
+  font-size: medium;
+  text-overflow: ellipsis;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.buys {
+  width: 7cm;
+  height: 45px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: larger;
+  background-color: rgb(60, 25, 2);
+  backdrop-filter: blur(10px);
+  outline: none;
+  border: none;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.buys:hover {
+  cursor: pointer;
+  transform: translateY(2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(2px) rotate(-1deg);
+}
+
+@media only screen and (max-width: 1000px) {
+  .name-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0.9cm;
+  }
+
+  .name-inp,
+  .email-inp {
+    width: 45.7%;
+    box-sizing: border-box;
+  }
+
+  .comment-inp,
+  .phone-inp,
+  .email-inp,
+  .name-inp {
+    width: 80%;
+  }
+}
