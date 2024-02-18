@@ -1,0 +1,56 @@
+.po-head {
+  margin-top: 4cm;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: none;
+}
+.po-heads {
+  margin-top: 1cm;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: none;
+}
+
+.po-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.po-para {
+  text-align: justify;
+  font-size: larger;
+  line-height: 1cm;
+}
+
+.po-head {
+  text-align: center;
+}
+
+.po-parabold {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.po-h4:hover {
+  cursor: none;
+  transform: none;
+  transform: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .po-container {
+    max-width: 90%;
+    margin-right: 1.5cm;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .po-container {
+    max-width: 80%;
+    margin-left: -1px;
+  }
+}

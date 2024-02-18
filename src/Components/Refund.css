@@ -1,0 +1,211 @@
+.re-head {
+  margin-top: 4cm;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: none;
+}
+
+.re-container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.re-para {
+  text-align: justify;
+  font-size: larger;
+  line-height: 1cm;
+}
+
+.ci-para {
+  text-align: left;
+  font-size: larger;
+  line-height: 1cm;
+  margin-left: 8.8cm;
+  width: 80%;
+}
+.ci-container {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1.8cm;
+}
+.ci-head {
+  margin-top: 5cm;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: "Kanit", sans-serif;
+  text-shadow: none;
+}
+.re-paras {
+  text-align: justify;
+  font-size: larger;
+  line-height: 1cm;
+  font-weight: bolder;
+}
+
+.re-head {
+  text-align: center;
+}
+
+.re-parabold {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.re-h4:hover {
+  cursor: none;
+  transform: none;
+  transform: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .re-container {
+    max-width: 90%;
+    margin-right: 1.5cm;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .re-container {
+    max-width: 80%;
+    margin-left: -1px;
+  }
+}
+
+@media only screen and (max-width: 1225px) {
+  .ci-para {
+    margin-left: 8cm;
+  }
+}
+
+@media only screen and (max-width: 1165px) {
+  .ci-para {
+    margin-left: 7cm;
+  }
+}
+
+@media only screen and (max-width: 1090px) {
+  .ci-para {
+    margin-left: 6cm;
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .ci-para {
+    margin-left: 5cm;
+  }
+}
+@media only screen and (max-width: 980px) {
+  .ci-para {
+    margin-left: 4cm;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .ci-para {
+    margin-left: 3cm;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .ci-para {
+    margin-left: 2cm;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ci-para {
+    margin-left: 1cm;
+  }
+}
+
+/* Contact-US css */
+
+.name-num {
+  display: flex;
+  gap: 25px;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.name-inp {
+  width: 22%;
+}
+
+.email-inp {
+  width: 22%;
+}
+
+.phone-inp {
+  width: 45.8%;
+  margin-top: 20px;
+}
+.comment-inp {
+  width: 45.8%;
+  margin-top: 20px;
+}
+.fields {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.name-inp,
+.email-inp,
+.comment-inp,
+.phone-inp {
+  outline: none;
+  font-size: medium;
+  text-overflow: ellipsis;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.buys {
+  width: 7cm;
+  height: 45px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: larger;
+  background-color: rgb(60, 25, 2);
+  backdrop-filter: blur(10px);
+  outline: none;
+  border: none;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.buys:hover {
+  cursor: pointer;
+  transform: translateY(2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateY(2px) rotate(-1deg);
+}
+
+@media only screen and (max-width: 1000px) {
+  .name-num {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 0.9cm;
+  }
+
+  .name-inp,
+  .email-inp {
+    width: 45.7%;
+    box-sizing: border-box;
+  }
+
+  .comment-inp,
+  .phone-inp,
+  .email-inp,
+  .name-inp {
+    width: 80%;
+  }
+}

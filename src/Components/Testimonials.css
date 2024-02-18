@@ -1,0 +1,78 @@
+.test {
+  font-family: "Kanit", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  justify-content: center;
+  padding: 1cm;
+  font-weight: bolder;
+  margin-bottom: 2cm;
+  margin: auto;
+}
+
+.testi {
+  width: 8cm;
+  height: 4cm;
+  border-radius: 5px;
+}
+
+.test-hr {
+  background-color: white;
+  box-shadow: none;
+}
+
+.hrr {
+  margin-top: 0;
+  box-shadow: none;
+  height: 2cm;
+}
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.italic {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  line-height: 1.6;
+}
+
+.test-names {
+  font-family: "Kanit", sans-serif;
+}
+.primary {
+  margin-bottom: 1cm;
+}
+
+@media only screen and (max-width: 1050px) {
+  .cards {
+    display: block;
+  }
+
+  .testimonial {
+    padding: 10px;
+    margin: auto;
+  }
+  .testi {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    height: 3.1cm;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .testi {
+    height: 3.5cm;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .testi {
+    height: 4cm;
+  }
+}

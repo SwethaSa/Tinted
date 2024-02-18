@@ -1,0 +1,11 @@
+.divider {
+  background-color: chocolate;
+  height: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(60, 25, 2);
+  font-family: "Kanit", sans-serif;
+  font-weight: bold;
+}

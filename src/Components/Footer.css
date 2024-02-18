@@ -1,0 +1,107 @@
+.foo {
+  color: peachpuff;
+  font-size: medium;
+  display: flex;
+  gap: 20px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1cm;
+}
+
+.target {
+  color: peachpuff;
+}
+.footer {
+  background-color: rgb(60, 25, 2);
+}
+
+.insta {
+  font-size: 25px;
+  transition: transform 0.3s ease;
+}
+
+.twitter {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp {
+  font-size: 21px;
+  transition: transform 0.3s ease;
+}
+
+.facebook {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.insta:hover {
+  cursor: pointer;
+
+  transform: scaleX(20px);
+  transform: scale(1.3);
+}
+
+.whatsapp:hover {
+  cursor: pointer;
+  transform: scaleX(20px);
+  transform: scale(1.3);
+}
+.facebook:hover {
+  cursor: pointer;
+  transform: scaleX(20px);
+  transform: scale(1.3);
+}
+
+.twitter:hover {
+  cursor: pointer;
+  transform: scaleX(20px);
+  transform: scale(1.3);
+}
+
+.line {
+  height: 1px;
+  background-color: rgba(99, 52, 20, 0.825);
+  margin-top: 0;
+  width: 80%;
+  margin: auto;
+}
+
+.low-foo {
+  display: flex;
+  gap: 6px;
+  color: peachpuff;
+  font-family: "Syne", sans-serif;
+  font-size: 13px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  padding: 2cm;
+  padding-bottom: 1cm;
+}
+
+.contact:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.shipping:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.privacy:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.terms:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.refund:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
