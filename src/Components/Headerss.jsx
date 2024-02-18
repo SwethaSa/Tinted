@@ -44,7 +44,6 @@ export default function Headerss() {
         (screenWidth > 975 && location.pathname !== "/home" && (
           <div className="feau">
             <div className={`header ${isTop ? "" : "scrolled"}`}>
-<<<<<<< HEAD
               <h1
                 style={{ textDecoration: "none" }}
                 onClick={() => navigate("/")}
@@ -53,85 +52,45 @@ export default function Headerss() {
               </h1>
 
               <h3
-=======
-              <Link style={{ textDecoration: "none" }} to="/">
-                <h1 onClick={() => navigate("/")}>Tinted</h1>
-              </Link>
-
-              <Link
->>>>>>> origin/main
                 style={{
                   textDecoration: isDeco ? "underline" : "none",
                   color: "black",
                 }}
-<<<<<<< HEAD
                 onClick={() => navigate("/")}
               >
                 Home
               </h3>
 
               <h3
-=======
-                to="/"
-              >
-                <h3 onClick={() => navigate("/")}>Home</h3>
-              </Link>
-
-              <Link
->>>>>>> origin/main
                 style={{
                   textDecoration: isDeco ? "underline" : "none",
                   color: "black",
                 }}
-<<<<<<< HEAD
                 onClick={() => navigate("/products")}
               >
                 Products
               </h3>
 
               <h3
-=======
-                to="/products"
-              >
-                <h3 onClick={() => navigate("/products")}>Products</h3>
-              </Link>
-
-              <Link
->>>>>>> origin/main
                 style={{
                   textDecoration: isDeco ? "underline" : "none",
                   color: "black",
                 }}
-<<<<<<< HEAD
                 onClick={() => navigate("/blogs")}
               >
                 Blogs
               </h3>
 
               <h3
-=======
-                to="/blogs"
-              >
-                <h3 onClick={() => navigate("/blogs")}>Blogs</h3>
-              </Link>
-              <Link
->>>>>>> origin/main
                 style={{
                   textDecoration: isDeco ? "underline" : "none",
                   color: "black",
                 }}
-<<<<<<< HEAD
                 onClick={() => navigate("/contact-us")}
               >
                 Contact
               </h3>
 
-=======
-                to="/contact"
-              >
-                <h3 onClick={() => navigate("/contact")}>Contact</h3>
-              </Link>
->>>>>>> origin/main
               <h4 className="search">
                 <BsSearchHeartFill />
               </h4>
@@ -153,7 +112,6 @@ export default function Headerss() {
             <div className={`header ${isTop ? "" : "scrolled"}`}>
               <SwipeableTemporaryDrawer />
 
-<<<<<<< HEAD
               <h1
                 style={{ textDecoration: "none" }}
                 className="tint-head"
@@ -162,13 +120,6 @@ export default function Headerss() {
                 Tinted
               </h1>
 
-=======
-              <Link style={{ textDecoration: "none" }} to="/">
-                <h1 className="tint-head" onClick={() => navigate("/")}>
-                  Tinted
-                </h1>
-              </Link>
->>>>>>> origin/main
               <h4 className="tint-search">
                 <BsSearchHeartFill />
               </h4>

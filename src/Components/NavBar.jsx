@@ -71,7 +71,6 @@ export default function SwipeableTemporaryDrawer() {
               </ListItemIcon>
               {/* Use Link component to navigate */}
               <ListItemText
-<<<<<<< HEAD
                 primary={
                   <Link
                     to={
@@ -85,9 +84,6 @@ export default function SwipeableTemporaryDrawer() {
                     {text}
                   </Link>
                 }
-=======
-                primary={<Link to={`/${text.toLowerCase()}`}>{text}</Link>}
->>>>>>> origin/main
               />
             </ListItemButton>
           </ListItem>
