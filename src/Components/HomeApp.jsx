@@ -64,11 +64,7 @@ export default function HomeApp() {
         </div>
         {screenWidth <= 700 ? (
           <video autoPlay loop muted style={{ maxWidth: "100%" }}>
-<<<<<<< HEAD
             <source src="/assets/BGVid.mp4" type="video/mp4" />
-=======
-            <source src="/src/assets/BGVid.mp4" type="video/mp4" />
->>>>>>> origin/main
             Your browser does not support the video tag.
           </video>
         ) : (

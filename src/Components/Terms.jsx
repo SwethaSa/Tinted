@@ -1,6 +1,5 @@
 import Footer from "./Footer";
 import Header from "./Header";
-import "./Terms.css";
 
 export default function Terms() {
   return (

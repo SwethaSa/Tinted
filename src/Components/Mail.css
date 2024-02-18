@@ -1,11 +1,8 @@
 .top {
   background-color: #f1eded;
-<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
-=======
->>>>>>> origin/main
 }
 
 .style {
@@ -36,110 +33,15 @@
   background-color: rgba(255, 218, 185, 0.759);
   backdrop-filter: blur(10px);
   border: 2px solid rgb(254, 199, 159);
-<<<<<<< HEAD
   margin-top: 20px;
   margin-bottom: 60px;
 }
 .sn-btn {
   margin-top: 20px;
 }
-=======
-  margin-left: 675px;
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
-
->>>>>>> origin/main
 .style-mail:hover {
   background-color: aliceblue;
   cursor: pointer;
   transform: translateY(2px) rotate(-1deg);
   border: 3px solid rgb(254, 199, 159);
 }
-<<<<<<< HEAD
-=======
-
-@media only screen and (max-width: 1300px) {
-  .style-mail {
-    margin-left: 530px;
-  }
-}
-
-@media only screen and (max-width: 1189px) {
-  .style-mail {
-    margin-left: 480px;
-  }
-}
-
-@media only screen and (max-width: 1163px) {
-  .style-mail {
-    margin-left: 440px;
-  }
-}
-
-@media only screen and (max-width: 1055px) {
-  .style-mail {
-    margin-left: 400px;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  .style-mail {
-    margin-left: 360px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .style-mail {
-    margin-left: 300px;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .style-mail {
-    margin-left: 250px;
-  }
-}
-
-@media only screen and (max-width: 666px) {
-  .style-mail {
-    margin-left: 200px;
-  }
-}
-
-@media only screen and (max-width: 566px) {
-  .style-mail {
-    margin-left: 150px;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .style-mail {
-    margin-left: 50px;
-  }
-}
-
-@media only screen and (max-width: 310px) {
-  .style-mail {
-    margin-left: 20px;
-  }
-}
-
-@media only screen and (max-width: 227px) {
-  .style-mail {
-    margin-left: 10px;
-  }
-}
-@media only screen and (max-width: 200px) {
-  .style-mail {
-    margin-left: 15px;
-    width: 3cm;
-  }
-}
-
-@media only screen and (max-width: 150px) {
-  .style-mail {
-    margin-left: 10px;
-  }
-}
->>>>>>> origin/main
