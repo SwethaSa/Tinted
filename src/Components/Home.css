@@ -47,7 +47,11 @@ h4 {
 }
 
 .bg {
+<<<<<<< HEAD
   background-image: url("./assets/bg.jpeg");
+=======
+  background-image: url("./src/assets/bg.jpeg");
+>>>>>>> origin/main
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;

@@ -7,9 +7,13 @@ export default function Mail() {
       <div className="top">
         <div className="style">UNLEASH YOUR STYLE WITH TINTED</div>
         <div className="style-desc">Join for Exclusive Updates & Deals. ✨</div>
+<<<<<<< HEAD
         <div className="sn-btn">
           <button className="style-mail">Email</button>
         </div>
+=======
+        <button className="style-mail">Email</button>
+>>>>>>> origin/main
       </div>
     </>
   );
