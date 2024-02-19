@@ -102,7 +102,6 @@ export default function SwipeableTemporaryDrawer() {
                       {divIcon[index]}
                     </ListItemIcon>
                   </ListItemIcon>
-                  {/* Use Link component to navigate */}
                   <ListItemText
                     primary={
                       <Link to={`/${text.toLowerCase()}`} className="link-deco">

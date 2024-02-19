@@ -59,11 +59,11 @@ export default function Products() {
               <p className="price">Rs.{imageSrc.price}</p>
               <p className="checkout">Secure Checkout with </p>
               <div className="checkout-opt">
-                <img className="gpay" src="./src/assets/gpa.png" alt="gpay" />
+                <img className="gpay" src="./assets/gpa.png" alt="gpay" />
 
-                <img className="visa" src="./src/assets/vsa.png" alt="visa" />
+                <img className="visa" src="./assets/vsa.png" alt="visa" />
 
-                <img className="ms" src="./src/assets/ms.png" alt="ms" />
+                <img className="ms" src="./assets/ms.png" alt="ms" />
               </div>
               <div className="btns">
                 <button className="cart">Add to Cart</button>
