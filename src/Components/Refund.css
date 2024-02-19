@@ -209,3 +209,26 @@
     width: 80%;
   }
 }
+
+.thanks {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 1cm;
+  display: flex;
+  background-color: greenyellow;
+  border-radius: 20px;
+  padding: 10px;
+  width: 40%;
+}
+
+.thanks-icon {
+  font-size: 30px;
+  color: rgb(60, 25, 2);
+}
+
+.thanks-text {
+  font-size: larger;
+  font-weight: bold;
+  margin-left: 0;
+}

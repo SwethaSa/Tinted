@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import "./Refund.css";
 import TextField from "@mui/material/TextField";
+import { IoCheckmarkDoneCircleSharp } from "react-icons/io5";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -33,6 +34,22 @@ export default function Contact() {
         <p className="ci-para">
           Operating Address: T Nagar, Chennai, TamilNadu, India{" "}
         </p>
+      </div>
+      <div
+        className="thanks"
+        style={!thankYouVisible ? { backgroundColor: "transparent" } : {}}
+      >
+        {thankYouVisible && (
+          <>
+            <div className="thanks-icon">
+              <IoCheckmarkDoneCircleSharp />
+            </div>
+            <p className="thanks-text">
+              Thanks for contacting us. We'll get back to you as soon as
+              possible.
+            </p>
+          </>
+        )}
       </div>
       <div className="fields">
         <form onSubmit={handleSubmit}>
@@ -91,11 +108,6 @@ export default function Contact() {
             Send
           </button>
         </form>
-        {thankYouVisible && (
-          <p>
-            Thanks for contacting us. We'll get back to you as soon as possible.
-          </p>
-        )}
       </div>
 
       <br />
