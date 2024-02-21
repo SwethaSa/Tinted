@@ -9,7 +9,7 @@ export default function AllProducts() {
   const [sortBy, setSortBy] = useState("Alphabetically,A-Z");
 
   useEffect(() => {
-    // Fetch products from the API
+    
     fetch("https://backend-swethasa.vercel.app/products/all")
       .then((response) => response.json())
       .then((data) => setProducts(data))
