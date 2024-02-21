@@ -193,3 +193,78 @@ hr {
     border-radius: 20px;
   }
 }
+
+/* All Products CSS */
+
+.all-price {
+  margin-top: 4.5cm;
+  color: rgb(105, 78, 58);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: medium;
+}
+
+.all-prod {
+  margin-top: 4.5cm;
+  color: rgb(105, 78, 58);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: medium;
+  margin-left: -13cm;
+  display: flex;
+  align-items: center;
+}
+
+.all-sort {
+  margin-top: 4.5cm;
+  color: rgb(105, 78, 58);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: medium;
+  display: flex;
+  align-items: center;
+}
+
+.all-pri {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 13cm;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+select {
+  width: 4.2cm;
+  padding: 0.2cm;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: small;
+  outline: none;
+  border: none;
+  margin: 20px;
+  margin-left: 10px;
+}
+
+select:hover {
+  border: 2px solid rgb(60, 25, 2);
+}
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-left: 5cm;
+  margin-right: 5cm;
+}
+
+.product-card {
+  width: calc(32% - 20px);
+  margin-bottom: 40px;
+}
